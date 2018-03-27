@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--vertical Linear layout has table layout that have textview, edit text
+and relative layout that have two buttons -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -17,10 +18,9 @@
                 android:id="@+id/textView"
                 android:layout_span="1"
                 android:text="Name" />
-
+<!--layout weight (width) set fitting -->
             <EditText
                 android:id="@+id/editText"
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="type your name"
@@ -53,7 +53,7 @@
             android:layout_toRightOf="@+id/button"
             android:onClick="printClicked"
             android:text="print" />
-
+<!--set defalut invisible-->
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
