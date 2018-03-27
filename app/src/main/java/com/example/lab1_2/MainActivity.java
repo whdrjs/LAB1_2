@@ -20,23 +20,22 @@ public class MainActivity extends AppCompatActivity {
 
         init();
     }
-
+    //match widget
     public void init(){
-        edit_name=(EditText)findViewById(R.id.editText);
-        btn_print =(Button)findViewById(R.id.button2);
-        btn_clear =(Button)findViewById(R.id.button);
-        view_print=(TextView)findViewById(R.id.textView2);
+        edit_name=(EditText)findViewById(R.id.editText); //type text
+        btn_print =(Button)findViewById(R.id.button2);  //print button
+        btn_clear =(Button)findViewById(R.id.button);   //clear button
+        view_print=(TextView)findViewById(R.id.textView2);  //view text
     }
     public void clearClicked(View v){
-    edit_name.setText("");
-    view_print.setVisibility(View.INVISIBLE);
+    edit_name.setText("");      //Initialization
+    view_print.setVisibility(View.INVISIBLE);   //hide text view
     }
 
     public void printClicked(View v){
         String text="";
-        view_print.setVisibility(View.VISIBLE);
-        view_print.setText(edit_name.getText().toString());
-
+        view_print.setVisibility(View.VISIBLE); //show textview
+        view_print.setText(edit_name.getText().toString()); //edit text in veiwtext
     }
 
 }
